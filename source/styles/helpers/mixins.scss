@@ -30,7 +30,7 @@
 }
 
 @mixin desktopxlg{
-    @media screen and (max-width: 1900px){
+    @media screen and (max-width: 1961px){
         @content;
     }
 }
@@ -74,7 +74,7 @@
 }
 //phones
 @mixin minphone{
-    @media screen and (max-width: 390px){
+    @media screen and (max-width: 360px){
         @content;
     }
 }

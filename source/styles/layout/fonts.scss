@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'TT Norms Pro ExtraBlackItalic';
+  src: url('../fonts/TTNormsPro-ExtraBlackItalic.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-ExtraBlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Norms Thin';
+  src: url('../fonts/TTNormsPro-Thin.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms BoldItalic';
+  src: url('../fonts/TTNormsPro-BoldItalic.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Norms Pro ExtraBlack';
+  src: url('../fonts/TTNormsPro-ExtraBlack.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-ExtraBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms blackItalic';
+  src: url('../fonts/TTNormsPro-BlackItalic.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Norms lightItalic';
+  src: url('../fonts/TTNormsPro-LightItalic.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Norms light';
+  src: url('../fonts/TTNormsPro-Light.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms black';
+  src: url('../fonts/TTNormsPro-Black.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms italic';
+  src: url('../fonts/TTNormsPro-Italic.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Norms bold';
+  src: url('../fonts/TTNormsPro-Bold.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms medium';
+  src: url('../fonts/TTNormsPro-Medium.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms mediumItalic';
+  src: url('../fonts/TTNormsPro-MediumItalic.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Norms extraLight';
+  src: url('../fonts/TTNormsPro-ExtraLight.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms extraBold';
+  src: url('../fonts/TTNormsPro-ExtraBold.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms thinItalic';
+  src: url('../fonts/TTNormsPro-ThinItalic.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Norms extraLightItalic';
+  src: url('../fonts/TTNormsPro-ExtraLightItalic.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Norms extraBoldItalic';
+  src: url('../fonts/TTNormsPro-ExtraBoldItalic.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Norms regular';
+  src: url('../fonts/TTNormsPro-Regular.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Wudoo Mono light';
+  src: url('../fonts/WudooMono-Light.woff2') format('woff2'),
+      url('../fonts/WudooMono-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Wudoo Mono regular';
+  src: url('../fonts/WudooMono-Regular.woff2') format('woff2'),
+      url('../fonts/WudooMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Wudoo Mono bold';
+  src: url('../fonts/WudooMono-Bold.woff2') format('woff2'),
+      url('../fonts/WudooMono-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin wudo($style: regular){
+  @if $style == regular{
+    font-family: 'Wudoo Mono regular', Arial, Helvetica, sans-serif;
+  }
+  @if $style == light{
+    font-family: 'Wudoo Mono light', Arial, Helvetica, sans-serif;
+  }
+  @if $style == bold{
+    font-family: 'Wudoo Mono bold', Arial, Helvetica, sans-serif;
+  }
+}
+
+@mixin roboto($style: regular){
+  @if $style == regular  {
+      font-family: 'TT Norms regular', Arial, Helvetica, sans-serif;
+  }
+  @if $style == extraBlackItalic  {
+      font-family: 'TT Norms Pro ExtraBlackItalic', Arial, Helvetica, sans-serif;
+  }
+  @if $style == thin  {
+      font-family: 'TTT Norms Thin', Arial, Helvetica, sans-serif;
+  }
+  @if $style == boldItalic  {
+      font-family: 'TT Norms BoldItalic', Arial, Helvetica, sans-serif;
+  }
+  @if $style == extraBlack  {
+      font-family: 'TT Norms Pro ExtraBlack', Arial, Helvetica, sans-serif;
+  }
+  @if $style == blackItalic  {
+      font-family: 'TT Norms blackItalic', Arial, Helvetica, sans-serif;
+  }
+  @if $style == lightItalic  {
+      font-family: 'TT Norms lightItalic', Arial, Helvetica, sans-serif;
+  }
+  @if $style == light  {
+      font-family: 'TT Norms light', Arial, Helvetica, sans-serif;
+  }
+  @if $style == blacks  {
+      font-family: 'TT Norms black', Arial, Helvetica, sans-serif;
+  }
+  @if $style == italic  {
+      font-family: 'TT Norms italic', Arial, Helvetica, sans-serif;
+  }
+  @if $style == bold  {
+      font-family: 'TT Norms bold', Arial, Helvetica, sans-serif;
+  }
+  @if $style == medium  {
+      font-family: 'TT Norms medium', Arial, Helvetica, sans-serif;
+  }
+  @if $style == mediumItalic  {
+      font-family: 'TT Norms mediumItalic', Arial, Helvetica, sans-serif;
+  }
+  @if $style == extraLight  {
+      font-family: 'TT Norms extraLight', Arial, Helvetica, sans-serif;
+  }
+  @if $style == extraBold  {
+      font-family: 'TT Norms extraBold', Arial, Helvetica, sans-serif;
+  }
+  @if $style == thinItalic  {
+      font-family: 'TT Norms thinItalic', Arial, Helvetica, sans-serif;
+  }
+  @if $style == extraLightItalic  {
+      font-family: 'TT Norms extraLightItalic', Arial, Helvetica, sans-serif;
+  }
+  @if $style == extraBoldItalic  {
+      font-family: 'TT Norms extraBoldItalic', Arial, Helvetica, sans-serif;
+  }
+}

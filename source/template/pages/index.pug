@@ -1,0 +1,277 @@
+extends ../main-layout 
+
+block content
+  .header__navbar-menu-wrapp
+    .container
+      .row
+        .col
+          .header__navbar-menu-icon
+            span
+            span
+            span
+            span
+            span
+            span 
+  .header__menu
+    .container
+      .row
+        .col
+          .header__menu-wrapp.d-flex.flex-column
+            .header__menu-logo
+              img(src="assets/img/logo/logo-menu.svg", alt="Logo")
+            ul.header__menu-list
+              li.header__menu-item
+                .header__menu-item-name.text-uppercase
+                  a(href="#") story
+              li.header__menu-item
+                .header__menu-item-name.text-uppercase
+                  a(href="#") technology
+              li.header__menu-item.active
+                .header__menu-item-name.text-uppercase
+                  a(href="#") products
+                .header__menu-item-sub.d-flex.flex-wrap
+                  .header__menu-item-sub-block
+                    ul
+                      li
+                        p Turklex
+                      li
+                        p Socialays
+                      li
+                        p Contract Intelligence
+                  .header__menu-item-sub-block
+                    ul
+                      li
+                        p Literature Discovery
+                      li
+                        p Support Intelligence
+                      li
+                        p Chatbot + VA
+                  .header__menu-item-sub-block
+                    ul
+                      li
+                        p Competitive Intelligence
+                      li
+                        p Enterprise Semantic Search Engine
+                      li
+                        p Legal Risk Analysis
+              li.header__menu-item
+                .header__menu-item-name.text-uppercase
+                  a(href="#") industries
+              li.header__menu-item
+                .header__menu-item-name.text-uppercase
+                  a(href="#") blog
+              li.header__menu-item
+                .header__menu-item-name.text-uppercase
+                  a(href="#") company
+              li.header__menu-item
+                .header__menu-item-name.text-uppercase
+                  a(href="#") contact us
+            .header__menu-footer.d-flex.align-items-center
+              .header__menu-footer-right
+                p © 2020 NSDD AI, All Rights Reserved
+              .header__menu-footer-left.ml-auto
+                .header__menu-footer-left-socials.d-flex
+                  .header__menu-footer-left-socials-item
+                    a(href="#" target="_blank")
+                      img(src="assets/img/icons/fb.svg", alt="facebook")
+                  .header__menu-footer-left-socials-item
+                    a(href="#" target="_blank")
+                      img(src="assets/img/icons/tw.svg", alt="twiter")
+                  .header__menu-footer-left-socials-item
+                    a(href="#" target="_blank")
+                      img(src="assets/img/icons/instagram.svg", alt="instragram")
+  section.section.hero
+    header.header
+      .container
+        .row
+          .col
+            nav.navbar.header__navbar.align-items-end
+              .header__navbar-logo
+                a(href="#")
+                  img(src="assets/img/logo/logo.svg", alt="Logo")
+    .hero__content
+      .container
+        .row
+          .col-12.col-sm-8.pos_rel
+            .hero__content-text
+              h1
+                span.med Human level
+                br
+                span understanding of text
+                br
+                span 
+                  | at the 
+                  a(href="#").bold speed of machine
+            .hero__content-link.d-none.d-sm-block
+              a(href="#").text-uppercase GO TO the PLAYGROUND
+          .col-12.col-sm-4
+            .hero__bg-text.text-uppercase
+              p 
+                span.blue SEMANTIC
+                span TEXT
+                span.blue PROCESSING
+                span LONDON
+                span.blue LATENT
+                span DIRICHLET
+                span.blue ALLOCATION
+                span PLATO
+                span.blue KNOWLEDGE
+                span GRAPH
+                span.blue VISUALIZATION
+                span MACHINE
+                span.blue LEARNING
+            .hero__content-img
+              img(src="assets/img/backgrounds/hero.svg", alt="Hero background")
+            .hero__content-link.d-block.d-sm-none
+              a(href="#").text-uppercase GO TO the PLAYGROUND
+    svg(
+      viewbox="0 0 1000 100" 
+      preserveAspectRatio="none"
+      class="triangle")
+      polygon(points="-20,100 1000,100 1000,0")
+  section.section.future
+    .container
+      .row.future__head.text-center
+        .col-12
+          .future__head-img
+            img(src="assets/img/backgrounds/future.png", alt="img") 
+          .future__head-desc
+            .future__head-desc-text
+              p
+                | Feel the 
+                span Future !
+            .future__expl
+              p.text-uppercase today
+              p
+                span What were our
+                br
+                span competitors
+                br 
+                span doing
+          .future__head-img-arrow
+            img(src="assets/img/backgrounds/arrows.png", alt="Img")
+      .row.future__footer
+        .col-12.col-sm-6
+          .future__expl.future__expl_mb.text-center
+              p.text-uppercase past
+              p
+                span What were our
+                br
+                span competitors
+                br 
+                span doing
+        .col-12.col-sm-6
+          .future__expl.text-center
+              p.text-uppercase future
+              p
+                span How will
+                br
+                span the market
+                br 
+                span evolve
+    svg(
+      viewbox="0 0 1000 100" 
+      preserveAspectRatio="none"
+      class="triangle")
+      polygon(points="0,0 0,100 1000,100")
+  section.section.complexity
+    .complexity__bck
+      img(src="assets/img/backgrounds/Left_Waves.png", alt="Img").d-xl-block.d-none
+      img(src="assets/img/backgrounds/Bot_Colors.png", alt="Img").d-xl-block.d-none
+      img(src="assets/img/backgrounds/rainbow.png", alt="Img").d-xl-block.d-none
+      img(src="assets/img/backgrounds/kill-mob.png", alt="Img").d-block.d-xl-none
+    .container
+      .row
+        .col-12
+          .complexity__head.text-center
+            .complexity__head-text
+              h2
+                span Kill the overkill,
+                br
+                span embrace complexity
+            .complexity__head-desc
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          .complexity__logos
+            ul.complexity__logos-list.d-flex.flex-wrap.justify-content-between
+              li.complexity__logos-item
+                .complexity__logos-item-img
+                  img(src="assets/img/logo/Logo_01.png", alt="Logo")
+              li.complexity__logos-item
+                .complexity__logos-item-img
+                  img(src="assets/img/logo/Logo_02.png", alt="Logo")
+              li.complexity__logos-item
+                .complexity__logos-item-img
+                  img(src="assets/img/logo/Logo_03.png", alt="Logo")
+              li.complexity__logos-item
+                .complexity__logos-item-img
+                  img(src="assets/img/logo/Logo_04.png", alt="Logo")
+              li.complexity__logos-item
+                .complexity__logos-item-img
+                  img(src="assets/img/logo/Logo_05.png", alt="Logo")
+              li.complexity__logos-item
+                .complexity__logos-item-img
+                  img(src="assets/img/logo/Logo_06.png", alt="Logo")
+    svg(
+      viewbox="0 0 1000 100" 
+      preserveAspectRatio="none"
+      class="triangle")
+      polygon(points="-20,100 1000,100 1000,0")
+  section.section.succes
+    .container
+      .row
+        .col-12.col-md-6
+          .succes__head-text
+            h2
+              span Intelligent speed is
+              br
+              span key to success
+          .succes__head-bgimg.d-none.d-md-block
+            img(src="assets/img/backgrounds/Beam.png", alt="Img")
+          .succes__head-desc
+            p 
+              | We can read 
+              span 1M 
+              | words in a minute and understand it. 
+              br
+              | Meaning is carried by the context.
+        .col-12.col-md-6
+          .succes__right-img.d-block.d-md-none
+            img(src="assets/img/backgrounds/mobile_hand.png", alt="Image")
+          .succes__right-img.d-none.d-md-block
+            img(src="assets/img/backgrounds/NSDDHand.png", alt="Image")
+    svg(
+      viewbox="0 0 1000 100" 
+      preserveAspectRatio="none"
+      class="triangle")
+      polygon(points="0,0 0,100 1000,100")
+  footer.footer
+    .container
+      .row
+        .col-12.col-md-5
+          .footer__logo
+            a(href="#")
+              img(src="assets/img/logo/footer-logo.svg", alt="Logo")
+        .col-12.col-md-7
+          .footer__nav.d-flex
+            ul.footer__nav-list
+              li.footer__nav-item
+                a(href="#") Story
+              li.footer__nav-item
+                a(href="#") Technology
+              li.footer__nav-item
+                a(href="#") Products
+              li.footer__nav-item
+                a(href="#") Industries
+            ul.footer__nav-list
+              li.footer__nav-item
+                a(href="#") Blog
+              li.footer__nav-item
+                a(href="#") Company
+              li.footer__nav-item
+                a(href="#") Contact Us
+          //- .footer__copyright.d-flex
+          //-   .footer__copyright-text
+          //-     p Copyright © 2019 NSDD AI, Inc. All rights reserved.
+          //-   .footer__copyright-links.text-uppercase.ml-auto
+          //-     a(href="#") terms of use
+          //-     a(href="#") privacy

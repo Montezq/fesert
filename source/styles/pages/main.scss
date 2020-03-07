@@ -1,0 +1,945 @@
+.hero{
+  background: linear-gradient(180deg, #111627, #1A1F32, #1A2033);
+  position: relative;
+  .navbar{
+    padding: 0;
+  }
+  &:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(#070A16, .5) 0,rgba(#070A16, .3) 60%, rgba(#000000, 0));
+  }
+  &:before{
+    z-index: 2;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 663px;
+    left: 0;
+    width: 40%;
+    height: 27px;
+    background: linear-gradient(to right, rgba(#141829, 1) 0%,rgba(#14192a , 1) 35%, rgba(#141828, .8) 55%, rgba(#131827, .0));
+    
+    @include desktop{
+      top: 559px;
+      width: 22%;
+    }
+    @include laptop{
+      top: 455px;
+      width: 20%;
+    }
+    @include tablet{
+      top: 400px;
+    }
+    @include phone{
+      display: none;
+    }
+  }
+  .triangle{
+    fill: $blue;
+  }
+}
+
+.header{
+  margin-bottom: 210px;
+  position: relative;
+  z-index: 2;
+  @include desktop{
+    margin-bottom: 150px;
+  }
+  @include phone{
+    margin-bottom: 100px;
+  }
+}
+.header__navbar-logo{
+  a{
+    display: block;
+    img{
+      max-width: 250px;
+      @include laptop{
+        max-width: 175px;
+      }
+    }
+  }
+}
+.header__navbar-menu-wrapp{
+  position: absolute;
+  width: 100%;
+  top: 93px;
+  left: 0;
+  @include laptop{
+    top: 60px;
+  }
+}
+.header__navbar-menu-icon{
+  width: 36px;
+  height: 28px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 9999;
+  span{
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 50%;
+    background: #ffffff;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    &:nth-child(even){
+      left: 50%;
+      border-radius: 0 9px 9px 0;
+    }
+    &:nth-child(odd){
+      left:0px;
+      border-radius: 9px 0 0 9px;
+    }
+    &:nth-child(1),
+    &:nth-child(2){
+      top: 0px;
+    }
+    &:nth-child(3),
+    &:nth-child(4){
+      top: 12px;
+    }
+    &:nth-child(5),
+    &:nth-child(6){
+      top: 24px;
+    }
+    
+  }
+}
+.header__navbar-menu-icon.open{
+  span{
+    &:nth-child(1),
+    &:nth-child(6){
+      transform: rotate(45deg);
+    }
+    &:nth-child(2),
+    &:nth-child(5){
+      transform: rotate(-45deg);
+    }
+    &:nth-child(1){
+      left: 4px;
+      top: 7px;
+    }
+    &:nth-child(2){
+      left: calc(50% - 4px);
+      top: 7px;
+    }
+    &:nth-child(3){
+      left: -50%;
+      opacity: 0; 
+    }
+    &:nth-child(4){
+      left: 100%;
+      opacity: 0; 
+    }
+    &:nth-child(5){
+      left: 4px;
+    top: 17px;
+    }
+    &:nth-child(6){
+      left: calc(50% - 4px);
+      top: 17px;
+    }
+  }
+}
+.header__menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 999;
+  background-image: linear-gradient(312deg, rgba(57, 68, 192, 0.9) 100%, rgba(78, 87, 255, 0.9) 30%);
+  padding-bottom: 50px;
+  width: 100%;
+  height: 100%;
+  @include phone{
+    padding-bottom: 15px;
+  }
+  .container{
+    height: 100%;
+  }
+  .row{
+    height: 100%;
+  }
+  .col{
+    height: 100%;
+  }
+  .header__menu-wrapp{
+    height: 100%;
+  }
+}
+
+.header__menu-logo{
+  margin-bottom: 25px;
+  img{
+    width: 250px;
+    @include laptop{
+      max-width: 175px;
+    }
+  }
+}
+.header__menu-list{
+  max-height: 566px;
+  overflow-y: auto;
+  margin: auto 0;
+  @include tablet{
+    padding-right: 15px;
+  }
+}
+.header__menu-list::-webkit-scrollbar {
+  width: 6px;
+  @include phone{
+    width: 4px;
+  }
+}
+
+.header__menu-list::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+.header__menu-list::-webkit-scrollbar-thumb {
+  background: #CBCBCB; 
+  border-radius: 10px;
+}
+
+.header__menu-item{
+  @include roboto(bold);
+  font-size: 36px;
+  margin-bottom: 15px;
+  @include desktop{
+    font-size: 30px;
+  }
+  @include phone{
+    font-size: 24px;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+  a{
+    color: #c8cbfb;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+.header__menu-item.active{
+  a{
+    color: #ffffff;
+  }
+}
+.header__menu-item-sub{
+  @include phone{
+    flex-direction: column;
+  }
+}
+.header__menu-item-sub-block{
+  padding-left: 25px;
+  border-left: 3px solid rgba(#ffffff, .5);
+  margin-left: 35px;
+  margin-top: 17px;
+  margin-bottom: 10px;
+  line-height: 1;
+  font-size: 24px;
+  color: #ffffff;
+  @include roboto(regular);
+  @include desktop{
+    font-size: 20px;
+  }
+  @include phone{
+    font-size: 18px;
+    margin-left: 20px;
+    padding-left: 15px;
+  }
+  li{
+    margin-bottom: 8px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.header__menu-footer{
+  margin-top: 25px;
+  @include phone{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
+.header__menu-footer-right{
+  color: rgba(#ffffff, .5);
+  font-size: 17px;
+  @include phone{
+    order: 2;
+    font-size: 14px;
+  }
+}
+.header__menu-footer-left{
+  @include phone{
+    margin: 0 auto 15px auto !important;
+  }
+}
+.header__menu-footer-left-socials{
+  margin-left: -25px;
+}
+.header__menu-footer-left-socials-item{
+  margin-left: 25px;
+  
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ffffff;
+  @include phone{
+    width: 35px;
+    height: 35px;
+  }
+  a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+    width: 20px;
+    max-height: 20px;
+    @include phone{
+      width: 18px;
+      max-height: 18px;
+    }
+  }
+}
+
+
+.hero__bg-text{
+  color: #ffffff;
+  @include wudo(bold);
+  font-size: 19px;
+  letter-spacing: 2.5px;
+  position: absolute;
+  top: 301px;
+  right: 48px;
+  white-space: nowrap;
+  @include desktop{
+    font-size: 18px;
+    top: 255px;
+    right: 20px;
+  }
+  @include laptop{
+    top: 200px;
+    right: 26px;
+    font-size: 16px;
+  }
+  @include tablet{
+    top: 145px;
+  }
+  @include phone{
+    font-size: 14px;
+    top: calc(38vw - -1px);
+  }
+  @include minphone{
+    font-size: 10px;
+    top: 38vw;
+  }
+  .blue{
+    color: #5359EA;
+  }
+}
+.hero__content-text{
+  margin-bottom: 250px;
+  @include desktop{
+    margin-bottom: 225px;
+  }
+  @include laptop{
+    margin-bottom: 180px;
+  }
+  @include tablet{
+    margin-bottom: 130px;
+  }
+  @include phone{
+    margin-bottom: 30px;
+  }
+  
+  h1{
+    color: #ffffff;
+    font-size: 50px;
+    @include desktop{
+      font-size: 42px;
+    }
+    @include laptop{
+      font-size: 34px;
+    }
+    @include tablet{
+      font-size: 30px;
+    }
+    @include minphone{
+      font-size: 25px;
+    }
+    .med{
+      @include roboto(medium);
+    }
+    .bold{
+      color: $blue;
+      text-decoration: underline;
+      @include roboto(bold);
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.hero__content-link{
+  margin-bottom: 150px;
+  position: relative;
+  z-index: 1;
+  @include desktop{
+    margin-bottom: 80px;
+  }
+  @include tablet{
+    margin-bottom: 50px;
+  }
+  @include phone{
+    text-align: center;
+  }
+  a{
+    display: inline-block;
+    font-size: 21px;
+    @include roboto(bold);
+    color: $blue;
+    padding: 15px 39px;
+    border: 2px solid $blue;
+    border-radius: 100px;
+    transition: .2s linear;
+    &:hover{
+      text-decoration: none;
+      background: $blue;
+      color: #ffffff;
+    }
+    @include laptop{
+      font-size: 17px;
+      padding: 14px 35px;
+    }
+    @include tablet{
+      font-size: 15px;
+      padding: 12px 20px;
+    }
+    
+  }
+}
+.hero__content-img{
+  position: absolute;
+  max-width: 1340px;
+  width: calc(100% + 50px);
+  right: -127px;
+  top: 0;
+  z-index: 1;
+  @include laptop{
+    right: -95px;
+  }
+  @include tablet{
+    width: calc(100% + 35px);
+    right: -65px;
+  }
+  @include phone{
+    position: relative;
+    width: 60%;
+    right: -61%;
+    margin-bottom: 35px;
+  }
+  img{
+    display: block;
+    width: 100%;
+  }
+}
+.future{
+  background: $blue;
+  .container{
+    max-width: 990px;
+  }
+  .triangle{
+    fill: #000000;
+  }
+}
+.future__head-img{
+  img{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+}
+.future__head-desc{
+  margin-top: -100px;
+  @include tablet{
+    margin-top: -75px;
+  }
+  @include phone{
+    margin-top: -50px;
+  }
+}
+.future__head-desc-text{
+  margin-bottom: 95px;
+  @include phone{
+    margin-bottom: 50px;
+  }
+  p{
+    @include roboto(medium);
+    font-size: 62px;
+    color: #111627;
+    @include tablet{
+      font-size: 52px;
+    }
+    @include phone{
+      font-size: 42px;
+    }
+    @include minphone{
+      font-size: 36px;
+    }
+    span{
+      color: #ffffff;
+      @include roboto(bold);
+    }
+  }
+}
+.future__expl{
+  p{
+    font-size: 27px;
+    @include roboto(medium);
+    color: #ffffff;
+    @include phone{
+      font-size: 20px;
+    }
+    &:first-child{
+      color: #000000;
+      @include roboto(extraBold);
+      letter-spacing: 15px;
+      margin-bottom: 30px;
+      @include phone{
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.future__expl_mb{
+  @include phone{
+    margin-bottom: 45px;
+  }
+}
+.future__head-img-arrow{
+  img{
+    display: block;
+    max-width: calc(100% + 600px);
+    margin-left: -300px;
+    @include desktop{
+      max-width: calc(100% + 400px);
+      margin-left: -200px;
+    }
+    @include laptop{
+      max-width: calc(100% + 200px);
+      margin-left: -100px;
+    }
+    @include phone{
+      max-width: calc(100% + 100px);
+      margin-left: -50px;
+    }
+  }
+}
+.future__footer{
+  margin-bottom: 150px;
+  @include phone{
+    margin-bottom: 65px;
+  }
+}
+.complexity{
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(15,18,29,1) 70%, rgba(15,18,29,1) 100%);
+  .triangle{
+    fill: $blue;
+  }
+}
+.complexity__bck{
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  height: 770px;
+  @include desktopxlg{
+    height: 530px;
+  }
+
+  @include desktop{
+    height: auto;
+  }
+  @include phone{
+    padding: 25px 0 0 0;
+    margin-bottom: 35px;
+  }
+  img{
+    &:first-child{
+      position: absolute;
+      left: 0;
+      width: 45%;
+      bottom: 18%;
+      transform: translateY(-15%);
+    }
+    &:nth-child(2){
+      max-width: 650px;
+      margin: 175px auto 0 auto;
+      @include desktopxlg{
+        margin: 0 auto;
+      }
+    }
+    &:nth-child(3){
+      width: 45%;
+      position: absolute;
+      right: -110px;
+      bottom: 18%;
+      transform: rotate(10deg);
+    }
+    &:last-child{
+      width: calc(100% + 160px);
+      @include phone{
+        width: calc(100% + 65px);
+      }
+    }
+  }
+}
+.complexity__head-text{
+  text-align: center;
+  margin-bottom: 75px;
+  @include phone{
+    margin-bottom: 45px;
+  }
+  h2{
+    font-size: 62px;
+    @include roboto(medium);
+    @include tablet{
+      font-size: 52px;
+    }
+    @include phone{
+      font-size: 36px;
+    }
+    @include minphone{
+      font-size: 30px;
+    }
+    span{
+      &:first-child{
+        color: $blue;
+      }
+      &:last-child{
+        color: #ffffff;
+      }
+    }
+  }
+}
+.complexity__head-desc{
+  max-width: 700px;
+  margin: 0 auto 150px auto;
+  font-size: 27px;
+  color: #6C738E;
+  @include roboto(medium);
+  @include tablet{
+    font-size: 24px;
+    margin: 0 auto 100px auto;
+  }
+  @include phone{
+    font-size: 20px;
+    margin: 0 auto 75px auto;
+  }
+  @include minphone{
+    font-size: 18px;
+  }
+}
+.complexity__logos{
+  margin-bottom: 150px;
+  @include tablet{
+    margin-bottom: 100px;
+  }
+  @include phone{
+    margin-bottom: 50px;
+  }
+}
+.complexity__logos-list{
+  max-width: 940px;
+  margin: 0 auto;
+}
+.complexity__logos-item{
+  width: 33.33333%;
+  text-align: center;
+  padding: 65px 0;
+  position: relative;
+  @include laptop{
+    width: 50%;
+  }
+  @include tablet{
+    padding: 45px 0;
+  }
+  @include phone{
+    padding: 35px 0;
+  }
+  &:after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: $blue;
+  }
+  &:nth-child(3n){
+    &:after{
+      display: none;
+      @include laptop{
+        display: block;
+      }
+    }
+  }
+  &:nth-child(2n){
+    &:after{
+      @include laptop{
+        display: none;
+      }
+    }
+  }
+  &:nth-child(-n+3){
+    &:before{
+      content: "";
+      display: block !important;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: $blue;
+    }
+  }
+  &:nth-child(-n+4){
+    &:before{
+      content: "";
+      display: none;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: $blue;
+      @include laptop{
+        display: block;
+      }
+    }
+  }
+
+  img{
+    width: 210px;
+    @include tablet{
+      width: 175px;
+    }
+    @include phone{
+      width: 65%;
+    }
+  }
+}
+.succes{
+  background: $blue;
+  .triangle{
+    fill: #ffffff;
+    margin-top: -8%;
+    position: relative;
+    @include laptop{
+      margin-top: -7%;
+    }
+    @include tablet{
+      margin-top: 0;
+    }
+  }
+}
+.succes__head-text{
+  margin-top: 100px;
+  margin-bottom: 90px;
+  @include laptop{
+    margin-top: 50px;
+    margin-bottom: 73px;
+  }
+  @include tablet{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  h2{
+    font-size: 62px;
+    @include roboto(medium);
+    color: #ffffff;
+    @include desktop{
+      font-size: 42px;
+    }
+    @include laptop{
+      font-size: 38px;
+    }
+    @include minphone{
+      font-size: 30px;
+    }
+    span{
+      &:last-child{
+        @include roboto(bold);
+      }
+    }
+  }
+}
+.succes__head-bgimg{
+  height: 50px;
+  position: relative;
+  margin-bottom: 100px;
+  @include laptop{
+    margin-bottom: 50px;
+  }
+  img{
+    display: block;
+    right: -55%;
+    position: absolute;
+    z-index: 4;
+    width: 66vw;
+    @include desktopxlg{
+      width: 73vw;
+    }
+    @include tablet{
+      right: 30%;
+    }
+  }
+}
+.succes__head-desc{
+  @include tablet{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  p{
+    font-size: 25px;
+    color: #ffffff;
+    @include roboto(medium);
+    position: relative;
+    z-index: 2;
+    width: 110%;
+    @include laptop{
+      font-size: 17px;
+      white-space: nowrap;
+      width: 100%;
+    }
+    @include tablet{
+      white-space: initial;
+    }
+    br{
+      @include phone{
+        display: none;
+      }
+    }
+    span{
+      @include roboto(bold);
+    }
+  }
+}
+
+
+.succes__right-img{
+  img{
+    display: block;
+    max-width: 525px;
+    width: 100%;
+    @include tablet{
+      max-width: 300%;
+      width: calc(100% + 25%);
+      margin-left: -25%;
+      margin-bottom: -10%;
+    }
+    @include phone{
+      margin-bottom: -8%;
+      width: 95%;
+      margin-left: -25px;
+    }
+  }
+}
+
+.footer{
+  background: #ffffff;
+}
+.footer__logo{
+  max-width: 250px;
+  @include laptop{
+    max-width: 200px;
+  }
+  img{
+    display: block;
+    width: 100%;
+  }
+}
+.footer__nav{
+  margin-top: 90px;
+  margin-bottom: 90px;
+  @include laptop{
+    margin-top: 70px;
+  }
+  @include phone{
+    margin-bottom: 50px;
+  }
+}
+.footer__nav-list{
+  &:first-child{
+    margin-right: 155px;
+    @include laptop{
+      margin-right: 100px;
+    }
+    @include phone{
+      margin-right: 55px;
+    }
+  }
+}
+.footer__nav-item{
+  a{
+    text-decoration: none;
+    font-size: 22px;
+    @include roboto(medium);
+    color: #81848F;
+    @include phone{
+      font-size: 18px;
+    }
+  }
+}
+.footer__copyright{
+  margin-bottom: 100px;
+}
+.footer__copyright-text{
+  @include roboto(bold);
+  font-size: 16px;
+  color: #81848F;
+}
+.footer__copyright-links{
+  a{
+    color: #81848F;
+    @include roboto(bold);
+    display: inline-block;
+    text-decoration: none;
+    &:first-child{
+      margin-right: 15px;
+      padding-right: 15px;
+      position: relative;
+      &:after{
+        content: "";
+        display: block;
+        width: 2px;
+        height: 16px;
+        position: absolute;
+        left: 100%;
+        top: 2px;
+        background: #81848F;
+      }
+    }
+  }
+}
